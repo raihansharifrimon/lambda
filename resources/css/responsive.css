@@ -1,0 +1,229 @@
+@media only screen and (max-width:1024px) {
+    .main-nav li {
+        margin-left: 2rem
+    }
+
+    .header-section .hero-box {
+        width: 90%;
+    }
+
+    .ingredients-section .container {
+        width: 70%
+    }
+
+    .ingredients-section .little-description {
+        width: 80%
+    }
+
+    .content-section .little-description {
+        width: 100%;
+        margin-left: 0;
+        line-height: 2.5rem
+    }
+
+    .reviews-section .slide-content {
+        width: 60%;
+        margin-left: 20%
+    }
+
+    .reservation-section .little-description {
+        width: 90%;
+        margin-left: 5%
+    }
+
+    .reservation-section .main-container {
+        width: 100%;
+        float: right
+    }
+
+    .reservation-section .image {
+        margin-top: 2rem
+    }
+
+    .reservation-section .box-one img {
+        width: 95%
+    }
+
+    .reservation-section form {
+        margin-top: 1.5rem
+    }
+
+    .reservation-section .btn {
+        margin-top: 1
+    }
+
+    .footer-section .box-one .little-description {
+        width: 80%;
+        margin-left: 10%
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .footer-section .box-one .little-description {
+        width: 85%;
+        margin-left: 7.5%
+    }
+
+    .logo {
+        margin-left: 2rem;
+        margin-top: 1.5rem
+    }
+
+    .main-nav {
+        display: none
+    }
+
+    .header-section .mobile-menu span {
+        display: block
+    }
+
+    .contract-section h2 {
+        font-size: 2.5rem
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 57%
+    }
+
+    .span_1_of_2 {
+        width: 100%
+    }
+
+    .header-section .hero-box h1 {
+        font-size: 6.5rem;
+    }
+
+    .content-section .dish img {
+        float: none
+    }
+
+    .content-section .dish {
+        text-align: center
+    }
+
+    .ingredients-section .container {
+        width: 100%
+    }
+
+    .reviews-section .slide-content {
+        width: 80%;
+        margin-left: 10%
+    }
+
+    .reservation-section .box-one img {
+        width: 100%
+    }
+
+    .reservation-section .image {
+        margin-top: 0;
+        margin-bottom: 1rem
+    }
+
+    .reservation-section .item-one .span_1_of_2:last-child,
+    .reservation-section .item-two .span_1_of_2:last-child {
+        margin-left: 0
+    }
+
+    .reservation-section .btn {
+        margin-left: 0
+    }
+
+    .contract-section .span_3_of_8,
+    .contract-section .span_5_of_8 {
+        width: 100%
+    }
+
+    .contract-section .address ul li {
+        text-align: center
+    }
+
+    .contract-section .address h2 {
+        text-align: center
+    }
+
+    .footer-section .box-one .little-description {
+        width: 99%;
+        margin-left: .5%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    h1 {
+        font-size: 5.6rem
+    }
+
+    h2 {
+        font-size: 2rem
+    }
+
+    .header-section .hero-box h1 {
+        font-size: 5rem;
+    }
+
+    .header-section .btn,
+    .header-section .btn:link,
+    .header-section .btn:visited {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .reviews-section .slide-content {
+        width: 100%;
+        margin-left: 0
+    }
+
+    .ingredients-section .container {
+        padding: 2rem
+    }
+
+    .ingredients-section h2 {
+        margin: 1rem 0;
+        font-size: 3rem
+    }
+
+    .ingredients-section .food-img img {
+        width: 85%
+    }
+
+    .menu-section .menu-list {
+        width: 100%;
+        margin-left: 0
+    }
+
+    .ingredients-section .little-description {
+        width: 100%
+    }
+
+    .footer-section .box-one .little-description {
+        width: 85%;
+        margin-left: 7.5%
+    }
+
+    .contract-section .google-map .map {
+        height: 30rem
+    }
+
+    .reservation-section .box-one img {
+        width: 95%
+    }
+
+    .footer-section .box-three h3 {
+        margin-top: 1rem
+    }
+
+    .footer-section .box-two ul {
+        margin: 3rem 0
+    }
+
+    section {
+        padding: 3rem
+    }
+
+}

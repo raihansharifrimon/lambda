@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Yeseva One', cursive;
+    line-height: 1.7rem;
+    font-size: 1.6rem
+}
+
+ul li {
+    list-style-type: none
+}
+
+.row {
+    max-width: 117rem;
+    margin: 0 auto
+}
+
+section {
+    padding: 8rem
+}
+
+h2 {
+    font-size: 3rem;
+    color: #c90;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    text-align: center
+}
+
+.little-description {
+    font-size: 1.6rem;
+    font-family: Lato, sans-serif;
+    line-height: normal;
+    width: 70%;
+    margin-left: 15%
+}
+
+.header-section {
+    background: url(img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 90vh
+}
+
+.logo {
+    margin: 1rem;
+    float: left
+}
+
+.header-section .logo img {
+    width: 14rem;
+    height: auto
+}
+
+.main-nav {
+    float: right;
+    margin-top: 1rem
+}
+
+.main-menu {
+    float: left
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 4rem
+}
+
+.main-nav li:first-child {
+    margin-left: 0
+}
+
+.main-nav .social-icon {
+    margin-left: .5rem;
+    float: right
+}
+
+.main-nav .social-icon li {
+    margin-left: .5rem
+}
+
+.main-nav ul li a:active,
+.main-nav ul li a:link,
+.main-nav ul li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+    padding: .5rem;
+    font-weight: 300;
+    font-family: Lato, sans-serif
+}
+
+.main-nav .social-icon a:active,
+.main-nav .social-icon a:link,
+.main-nav .social-icon a:visited {
+    color: #dab33e
+}
+
+.main-nav .main-menu a::before,
+.main-nav .social-icon a::before {
+    content: "";
+    width: 0%;
+    height: .3rem;
+    display: block;
+    background: #fff;
+    margin-bottom: 3rem
+}
+
+.main-nav .main-menu a:hover::before,
+.main-nav .social-icon a:hover::before {
+    width: 100%
+}
+
+.header-section .hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.header-section .mobile-menu span {
+    font-size: 4rem;
+    color: #fff;
+    float: right;
+    padding: .5rem;
+    margin-right: 2rem;
+    margin-top: 4.5rem;
+    cursor: pointer;
+    display: none
+}
+
+.header-section .mobile-menu span:hover {
+    color: #c89f2d
+}
+
+.header-section .mobile-menu .overlay {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .9);
+    overflow: hidden;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s
+}
+
+.header-section .overlay-content {
+    top: 20%;
+    position: relative;
+    overflow: hidden;
+    text-align: center
+}
+
+.header-section .overlay .close-btn {
+    position: absolute;
+    font-size: 8rem;
+    right: 2.5rem;
+    top: 4rem;
+    padding: 1rem;
+    text-decoration: none
+}
+
+.header-section .overlay .close-btn:hover {
+    color: #c89f2d
+}
+
+.header-section .overlay-content a {
+    display: block;
+    font-size: 3rem;
+    margin: 4.5rem 0;
+    font-family: Lato, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .2rem
+}
+
+.header-section .overlay-content a:hover {
+    color: #c89f2d
+}
+
+.sticky {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 0 1rem;
+    z-index: 9999999999;
+    background: rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .1rem .1rem .7rem #dab33e;
+    box-shadow: .1rem .1rem .7rem #dab33e
+}
+
+h1 {
+    font-family: 'Yeseva one';
+    font-size: 7rem;
+    line-height: normal;
+    letter-spacing: .1rem;
+    color: #fff;
+    font-weight: 400;
+    text-transform: lowercase
+}
+
+.header-section .divider {
+    margin-bottom: 4rem;
+    width: 100%
+}
+
+.header-section .btn,
+.header-section .btn:link,
+.header-section .btn:visited {
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, .3);
+    padding: 1.2rem 1.8rem;
+    text-transform: uppercase;
+    border: .1rem solid #fff;
+    margin: 0 1rem;
+    -webkit-box-shadow: .1rem .1rem .3rem #fff;
+    box-shadow: .1rem .1rem .3rem #fff;
+    transition: .2s;
+    margin-bottom: 4rem;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s
+}
+
+.header-section .btn:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.content-section {
+    background: url(img/bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover
+}
+
+.content-section .box {
+    text-align: center;
+    margin-top: 7rem
+}
+
+.content-section .little-description {
+    margin-top: 2rem
+}
+
+.content-section .cook-img {
+    margin: 6rem 0
+}
+
+.content-section .cook-img img {
+    width: 20rem;
+    height: auto
+}
+
+.content-section .dish img {
+    width: 100%;
+    height: auto;
+    float: left
+}
+
+.ingredients-section {
+    background: url(img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center
+}
+
+.ingredients-section .container {
+    width: 50%;
+    height: auto;
+    float: right;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    color: #fff;
+    padding: 10rem 0;
+    margin: 1.5rem 0;
+    border-radius: .5rem
+}
+
+.ingredients-section .divider {
+    margin: 1rem 0
+}
+
+.ingredients-section h2 {
+    color: #fff;
+    margin: 4rem 0;
+    font-size: 3.6rem;
+    line-height: normal
+}
+
+.ingredients-section .little-description {
+    margin: 2rem auto;
+    line-height: normal
+}
+
+.ingredients-section .food-img {
+    width: 65%;
+    margin: 4rem auto
+}
+
+/*==========================*/
+/* MENU SECTION*/
+/*==========================*/
+
+.menu-section {
+    background: url(img/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed
+}
+
+.menu-section .span_1_of_2:nth-child(3) {
+    margin-left: 0
+}
+
+.menu-section .container {
+    text-align: center
+}
+
+.menu-section .menu-list {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 1.5rem
+}
+
+.menu-section .box {
+    text-align: center
+}
+
+.menu-section .box h2 {
+    margin: 1rem 0
+}
+
+.menu-section .divider {
+    margin: 2rem 0
+}
+
+.menu-section h3 {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 400
+}
+
+.menu-section .list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: #c89f2d;
+    border-bottom: .1rem solid #c89f2d;
+    padding: .5rem
+}
+
+.menu-section small {
+    display: block;
+    overflow: hidden;
+    margin: 1rem;
+    color: #4c4c4c;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: normal;
+    font-family: Lato, sans-serif
+}
+
+.menu-section .span_1_of_2:nth-child(3),
+.menu-section .span_1_of_2:nth-child(4) {
+    margin-top: 4%
+}
+
+.menu-section .menu-list .special {
+    border: .1rem solid #dab33e;
+    position: relative;
+    margin-top: 3rem
+}
+
+.menu-section .special::after {
+    content: url(img/special-bg.jpg);
+    position: absolute;
+    z-index: 9999999;
+    right: -.1rem;
+    top: -2.2rem
+}
+
+.reviews-section {
+    background: url(img/bg-5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    text-align: center
+}
+
+.reviews-section .slide-content {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2rem;
+    padding: 7rem 0;
+    height: auto;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem
+}
+
+.reviews-section h2 {
+    margin: 1.5rem
+}
+
+.reviews-section .divider {
+    margin: 2rem auto;
+    width: 20.4rem;
+    height: auto
+}
+
+.reviews-section .little-description {
+    margin: 2rem auto;
+    line-height: 2.6rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    width: 75%;
+    position: relative
+}
+
+.reviews-section .little-description::before {
+    content: url(img/quate.png);
+    top: -1rem;
+    left: -3rem;
+    position: absolute
+}
+
+.reviews-section span {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    text-transform: capitalize
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 5rem
+}
+
+.reservation-section {
+    background: url(img/bg-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center
+}
+
+.reservation-section .little-description {
+    margin-bottom: .5rem;
+    line-height: 2.5rem;
+    width: 85%;
+    margin-left: 7.5%
+}
+
+.reservation-section .little-description-one {
+    margin-top: .5rem
+}
+
+.reservation-section .box-one img {
+    border-radius: .4rem;
+    width: 100%;
+    height: auto
+}
+
+.reservation-section .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.reservation-section form {
+    text-align: center;
+    margin-top: 2.5rem
+}
+
+.reservation-section .form-item {
+    text-align: left;
+    width: 90%;
+    margin-left: 5%
+}
+
+.reservation-section label {
+    display: block;
+    font-family: Lato, sans-serif;
+    color: #c90
+}
+
+.reservation-section input[type=date],
+.reservation-section input[type=email],
+.reservation-section input[type=number],
+.reservation-section input[type=text] {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: .8rem;
+    background: #fff;
+    border: .1rem solid #c8c6c6;
+    border-radius: .2rem;
+    margin-top: .7rem;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #4c4c4c;
+    font-family: Lato, sans-serif
+}
+
+.reservation-section input[type=number] {
+    -moz-appearance: textfield
+}
+
+.reservation-section input::-webkit-inner-spin-button,
+.reservation-section input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.reservation-section button {
+    border: 0;
+    outline: 0;
+    background: #c89f2d;
+    padding: 1rem 5rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 9999999;
+    margin-top: 2rem;
+    font-family: Lato, sans-serif;
+    transition: .3s;
+    border-radius: .3rem;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s
+}
+
+.reservation-section .btn {
+    text-align: center
+}
+
+.reservation-section button:hover {
+    background: #dab33e
+}
+
+.reservation-section .main-container {
+    width: 90%;
+    overflow: hidden;
+    float: right
+}
+
+.contract-section {
+    background: #000;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.contract-section .google-map .map {
+    width: 100%;
+    height: 40rem;
+    border-radius: .3rem;
+    -webkit-box-shadow: .1rem .1rem .6rem #fff;
+    box-shadow: .1rem .1rem .6rem #fff;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem
+}
+
+.contract-section .address {
+    margin-top: 4rem
+}
+
+.contract-section h2 {
+    margin: 4rem 0;
+    text-align: right;
+    font-size: 3rem
+}
+
+.contract-section .address ul li {
+    color: #fff;
+    margin: 1.5rem 0;
+    text-align: right;
+    font-family: Lato, sans-serif
+}
+
+.footer-section {
+    text-align: center;
+    background: #c90;
+    border-top: .1rem solid #fff
+}
+
+.footer-section h3 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 600
+}
+
+.footer-section .divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+.footer-section .box-one .little-description {
+    width: 90%;
+    margin-left: 5%;
+    line-height: 2rem;
+    text-align: center
+}
+
+.footer-section .opening-hours span {
+    font-family: Lato, sans-serif;
+    display: block;
+    margin: 1rem 0
+}
+
+.footer-section .opening-hours {
+    margin-top: 2.5rem
+}
+
+.footer-section ul li {
+    display: inline-block;
+    margin: 0 .3rem;
+    font-size: 1.8rem
+}
+
+.footer-section .box-two ul {
+    margin: 4rem 0
+}
+
+.footer-section .box-three .little-description {
+    margin-top: 2rem;
+    width: 60%;
+    margin-left: 20%
+}
+
+.footer-section .box-three ul {
+    margin-bottom: 3rem;
+    margin-top: 5rem
+}
+
+.footer-section .box-three ul li:hover,
+.footer-section .box-two ul li:hover {
+    color: #4c4c4c;
+    cursor: pointer
+}
+
+.footer-section .copyright {
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    font-family: Lato, sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #4c4c4c;
+    line-height: normal
+}
+
+.footer-section .copyright a {
+    text-decoration: none;
+    color: #d1d1d1
+}
